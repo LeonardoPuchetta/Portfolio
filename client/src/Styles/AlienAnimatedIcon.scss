@@ -1,0 +1,199 @@
+//clases de aliennauta dependiendo del tamaño
+//total 3 clases
+.alien-big{
+    display: none; 
+    width: 7vmin;
+    height: 7vmin;
+    img{
+        animation: scale-image 12.5s infinite ;
+        -webkit-animation:scale-image 12.5s infinite ;
+        -moz-animation:scale-image 12.5s infinite ;
+        }
+}
+.alien-medium{
+    display: none; 
+    width: 4.5vmin;
+    height: 4.5vmin;
+    img{
+        animation: scale-image 12.5s 0.5s infinite ;
+        -webkit-animation:scale-image 12.5s 0.5s infinite ;
+        -moz-animation:scale-image 12.5s 0.5s infinite ;
+        }
+}
+.alien-small{
+    display: none; 
+    width: 2.5vmin;
+    height: 2.5vmin;
+    img{
+        animation: scale-image 12.5s 1s infinite ;
+        -webkit-animation:scale-image 12.5s 1s infinite ;
+        -moz-animation:scale-image 12.5s 1s infinite ;
+        }
+}
+
+//clases de alien dependiendo del origen de partida y del tamaño 
+//ejecutan una animacion distinta cada uno 
+// total 15 clases
+
+//las clases de big no tienen retardo en la animacion 
+.alien-big-10{
+    display: none; 
+    position: absolute;
+    animation: alien-origin-10 12.5s infinite ;
+    -webkit-animation:alien-origin-10 12.5s infinite ;
+    -moz-animation:alien-origin-10 12.5s infinite ;    
+}
+.alien-big-30{
+    display: none; 
+    position: absolute;
+    animation: alien-origin-30 12.5s  infinite ;
+    -webkit-animation:alien-origin-30 12.5s  infinite ;
+    -moz-animation:alien-rigin-30 12.5s  infinite ;    
+}
+.alien-big-50{
+    display: none; 
+    position: absolute;
+    animation: alien-origin-50 12.5s  infinite ;
+    -webkit-animation:alien-origin-50 12.5s  infinite ;
+    -moz-animation:alien-origin-50 12.5s  infinite ;
+ 
+}
+
+.alien-big-70{
+    display: none; 
+    position: absolute;
+    animation: alien-origin-70 12.5s infinite ;
+    -webkit-animation:alien-origin-70 12.5s infinite ;
+    -moz-animation:alien-origin-70 12.5s infinite ;
+
+}
+.alien-big-90{
+    display: none; 
+    position: absolute;
+    animation: alien-origin-90 12.5s infinite ;
+    -webkit-animation:alien-origin-90 12.5s infinite ;
+    -moz-animation:alien-origin-90 12.5s infinite ;
+
+}
+//las clases medium tienen retardo 0.5s en la animacion
+
+.alien-medium-10{
+    display: none; 
+    position: absolute;
+    animation: alien-origin-10 12.5s 0.5s infinite ;
+    -webkit-animation:alien-origin-10 12.5s 0.5s infinite ;
+    -moz-animation:alien-origin-10 12.5s 0.5s infinite ;    
+}
+.alien-medium-30{
+    display: none; 
+    position: absolute;
+    animation: alien-origin-30 12.5s  0.5s infinite ;
+    -webkit-animation:alien-origin-30 12.5s  0.5s infinite ;
+    -moz-animation:alien-rigin-30 12.5s  0.5s infinite ;    
+}
+.alien-medium-50{
+    display: none; 
+    position: absolute;
+    animation: alien-origin-50 12.5s 0.5s infinite ;
+    -webkit-animation:alien-origin-50 12.5s 0.5s infinite ;
+    -moz-animation:alien-origin-50 12.5s 0.5s infinite ;
+
+}
+
+.alien-medium-70{
+    display: none; 
+    position: absolute;
+    animation: alien-origin-70 12.5s 0.5s infinite ;
+    -webkit-animation:alien-origin-70 12.5s 0.5s infinite ;
+    -moz-animation:alien-origin-70 12.5s  0.5s infinite ;
+
+}
+.alien-medium-90{
+    display: none; 
+    position: absolute;
+    animation: alien-origin-90 12.5s 0.5s infinite ;
+    -webkit-animation:alien-origin-90 12.5s  0.5s infinite ;
+    -moz-animation:alien-origin-90 12.5s 0.5s infinite ;
+}
+
+//las clases small tienen retardo 1s en la animacion
+
+.alien-small-10{
+    display: none; 
+    position: absolute;
+    animation: alien-origin-10 12.5s 1s infinite ;
+    -webkit-animation:alien-origin-10 12.5s 1s infinite ;
+    -moz-animation:alien-origin-10 12.5s 1s infinite ;    
+}
+.alien-small-30{
+    display: none; 
+    position: absolute;
+    animation: alien-origin-30 12.5s  1s infinite ;
+    -webkit-animation:alien-origin-30 12.5s  1s infinite ;
+    -moz-animation:alien-rigin-30 12.5s  1s infinite ;    
+}
+.alien-small-50{
+    display: none; 
+    position: absolute;
+    animation: alien-origin-50 12.5s 1s infinite ; 
+    -webkit-animation:alien-origin-50 12.5s 1s infinite;
+    -moz-animation:alien-origin-50 12.5s 1s infinite ;
+
+}
+
+.alien-small-70{
+    display: none; 
+    position: absolute;
+    animation: alien-origin-70 12.5s 1s infinite ;
+    -webkit-animation:alien-origin-70 12.5s 1s infinite ;
+    -moz-animation: alien-origin-70 12.5s  1s infinite ;
+
+}
+.alien-small-90{
+    display: none; 
+    position: absolute;
+    animation: alien-origin-90 12.5s 1s infinite ;
+    -webkit-animation:alien-origin-90 12.5s  1s infinite; 
+    -moz-animation:alien-origin-90 12.5s 1s infinite ;
+}
+
+
+
+//cambio de escala
+@keyframes scale-image{
+    from{width: 100%;height: auto;}
+    to{ width: 25%; height: auto;}
+}
+// rotaciones 
+@keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}}
+
+//animaciones aliennauta 
+@keyframes alien-origin-10{
+    from {top: 80%;opacity: 0.8;left:10%;}
+    50%{top: 50%;opacity:0.5;left:80%}
+    to {top: 20%;opacity: 0;left:50%;}
+ }
+ @keyframes alien-origin-30{
+    from {top: 80%;opacity: 0.8;left:30%;}
+    50%{top: 40%;opacity:0.5;left:70%}
+    to {top: 20%;opacity: 0;left:50%;}
+ }
+ @keyframes alien-origin-50{
+    from {top: 80%;opacity: 0.8;left:50%;}
+    50%{top: 50%;opacity:0.5;left:10%}
+    to {top: 20%;opacity: 0;left:50%;}
+ }
+ @keyframes alien-origin-70{
+    from {top: 80%;opacity: 0.8;left:70%;}
+    50%{top: 40%;opacity:0.5;left:90%}
+    to {top: 20%;opacity: 0;left:50%;}
+ }
+ @keyframes alien-origin-90{
+    from {top: 80%;opacity: 0.8;left:90%;}
+    50%{top: 40%;opacity:0.5;left:20%}
+    to {top: 20%;opacity: 0;left:50%;}
+ }

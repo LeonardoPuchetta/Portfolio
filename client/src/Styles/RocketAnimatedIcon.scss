@@ -1,0 +1,235 @@
+
+//clases de cohete dependiendo del tamaño
+//total 3 clases
+.rocket-big{
+    display: none; 
+    width: 8vmin;
+    height: 8vmin;
+    img{
+        animation: scale-image 5s infinite ;
+        -webkit-animation:scale-image 5s infinite ;
+        -moz-animation:scale-image 5s infinite ;
+        }
+}
+.rocket-medium{
+    display: none; 
+    width: 5vmin;
+    height: 5vmin;
+    img{
+        animation: scale-image 5s 0.5s infinite ;
+        -webkit-animation:scale-image 5s 0.5s infinite ;
+        -moz-animation:scale-image 5s 0.5s infinite ;
+        }
+}
+.rocket-small{
+    display: none; 
+    width: 4vmin;
+    height: 4vmin;
+    img{
+        animation: scale-image 5s 1s infinite ;
+        -webkit-animation:scale-image 5s 1s infinite ;
+        -moz-animation:scale-image 5s 1s infinite ;
+        }
+}
+
+//clases de cohete dependiendo del origen de partida
+//ejecutan una animacion distinta cada uno 
+// total 15 clases
+
+//las clases de big no tienen retardo en la animacion 
+.rocket-big-10{
+    display: none; 
+    position: absolute;
+    animation: rocket-origin-10 5s infinite ;
+    -webkit-animation:rocket-origin-10 5s infinite ;
+    -moz-animation:rocket-origin-10 5s infinite ;    
+}
+.rocket-big-30{
+    display: none; 
+    position: absolute;
+    animation: rocket-origin-30 5s  infinite ;
+    -webkit-animation:rocket-origin-30 5s  infinite ;
+    -moz-animation:rocket-rigin-30 5s  infinite ;    
+}
+.rocket-big-50{
+    display: none; 
+    position: absolute;
+    animation: rocket-origin-50 5s  infinite ;
+    -webkit-animation:rocket-origin-50 5s  infinite ;
+    -moz-animation:rocket-origin-50 5s  infinite ;
+    img{
+        -webkit-transform:rotate(-45deg);
+        -moz-transform:rotate(-45deg);
+        -o-transform:rotate(-45deg);
+    }    
+}
+
+.rocket-big-70{
+    display: none; 
+    position: absolute;
+    animation: rocket-origin-70 5s infinite ;
+    -webkit-animation:rocket-origin-70 5s infinite ;
+    -moz-animation:rocket-origin-70 5s infinite ;
+    img{
+        -webkit-transform:rotate(-90deg);
+        -moz-transform:rotate(-90deg);
+        -o-transform:rotate(-90deg);
+    }
+}
+.rocket-big-90{
+    display: none; 
+    position: absolute;
+    animation: rocket-origin-90 5s infinite ;
+    -webkit-animation:rocket-origin-90 5s infinite ;
+    -moz-animation:rocket-origin-90 5s infinite ;
+    img{
+        -webkit-transform:rotate(-90deg);
+        -moz-transform:rotate(-90deg);
+        -o-transform:rotate(-90deg);
+    }
+}
+//las clases medium tienen retardo 0.5s en la animacion
+
+.rocket-medium-10{
+    display: none; 
+    position: absolute;
+    animation: rocket-origin-10 5s 0.5s infinite ;
+    -webkit-animation:rocket-origin-10 5s 0.5s infinite ;
+    -moz-animation:rocket-origin-10 5s 0.5s infinite ;    
+}
+.rocket-medium-30{
+    display: none; 
+    position: absolute;
+    animation: rocket-origin-30 5s  0.5s infinite ;
+    -webkit-animation:rocket-origin-30 5s  0.5s infinite ;
+    -moz-animation:rocket-rigin-30 5s  0.5s infinite ;    
+}
+.rocket-medium-50{
+    display: none; 
+    position: absolute;
+    animation: rocket-origin-50 5s 0.5s infinite ;
+    -webkit-animation:rocket-origin-50 5s 0.5s infinite ;
+    -moz-animation:rocket-origin-50 5s 0.5s infinite ;
+    img{
+        -webkit-transform:rotate(-45deg);
+        -moz-transform:rotate(-45deg);
+        -o-transform:rotate(-45deg);
+    }    
+}
+
+.rocket-medium-70{
+    display: none; 
+    position: absolute;
+    animation: rocket-origin-70 5s 0.5s infinite ;
+    -webkit-animation:rocket-origin-70 5s 0.5s infinite ;
+    -moz-animation:rocket-origin-70 5s  0.5s infinite ;
+    img{
+        -webkit-transform:rotate(-90deg);
+        -moz-transform:rotate(-90deg);
+        -o-transform:rotate(-90deg);
+    }
+}
+.rocket-medium-90{
+    display: none; 
+    position: absolute;
+    animation: rocket-origin-90 5s 0.5s infinite ;
+    -webkit-animation:rocket-origin-90 5s  0.5s infinite ;
+    -moz-animation:rocket-origin-90 5s 0.5s infinite ;
+    img{
+        -webkit-transform:rotate(-90deg);
+        -moz-transform:rotate(-90deg);
+        -o-transform:rotate(-90deg);
+    }
+}
+
+//las clases small tienen retardo 1s en la animacion
+
+.rocket-small-10{
+    display: none; 
+    position: absolute;
+    animation: rocket-origin-10 5s 1s infinite ;
+    -webkit-animation:rocket-origin-10 5s 1s infinite ;
+    -moz-animation:rocket-origin-10 5s 1s infinite ;    
+}
+.rocket-small-30{
+    display: none; 
+    position: absolute;
+    animation: rocket-origin-30 5s  1s infinite ;
+    -webkit-animation:rocket-origin-30 5s  1s infinite ;
+    -moz-animation:rocket-rigin-30 5s  1s infinite ;    
+}
+.rocket-small-50{
+    display: none; 
+    position: absolute;
+    animation: rocket-origin-50 5s 1s infinite ;
+    -webkit-animation:rocket-origin-50 5s 1s infinite ;
+    -moz-animation:rocket-origin-50 5s 1s infinite ;
+    img{
+        -webkit-transform:rotate(-45deg);
+        -moz-transform:rotate(-45deg);
+        -o-transform:rotate(-45deg);
+    }    
+}
+
+.rocket-small-70{
+    display: none; 
+    position: absolute;
+    animation: rocket-origin-70 5s 1s infinite ;
+    -webkit-animation:rocket-origin-70 5s 1s infinite ;
+    -moz-animation:rocket-origin-70 5s  1s infinite ;
+    img{
+        -webkit-transform:rotate(-90deg);
+        -moz-transform:rotate(-90deg);
+        -o-transform:rotate(-90deg);
+    }
+}
+.rocket-small-90{
+    display: none; 
+    position: absolute;
+    animation: rocket-origin-90 5s 1s infinite ;
+    -webkit-animation:rocket-origin-90 5s  1s infinite ;
+    -moz-animation:rocket-origin-90 5s 1s infinite ;
+    img{
+        -webkit-transform:rotate(-90deg);
+        -moz-transform:rotate(-90deg);
+        -o-transform:rotate(-90deg);
+    }
+}
+
+
+
+//cambio de escala
+@keyframes scale-image{
+    from{width: 100%;height: auto;}
+    to{ width: 25%; height: auto;}
+}
+
+// animaciones cohete 
+//total 5 animaciones
+//left rockets
+@keyframes rocket-origin-10{
+    from {top: 80%;opacity: 0.8;left:10%;}
+    50%{top: 65%;opacity:0.5;left:10%;}
+    to {top: 20%;opacity: 0;left:50%;}
+ }
+ @keyframes rocket-origin-30{
+    from {top: 80%;opacity: 0.8;left:30%;}
+    50%{top: 65%;opacity:0.5;left:30%;}
+    to {top: 20%;opacity: 0;left:50%;}
+ }
+ @keyframes rocket-origin-50{
+    from {top: 85%;opacity: 0.8;left:50%;}
+    50%{top: 65%;opacity:0.5;left:50%;}
+    to {top: 20%;opacity: 0;left:50%;}
+ }
+ //right rockets
+ @keyframes rocket-origin-70{
+    from {top: 85%;opacity: 0.8;left:70%;}
+    50%{top: 40%;opacity:0.5;left:70%;}
+    to {top: 10%;opacity: 0;left:50%;}
+ }
+ @keyframes rocket-origin-90{
+    from {top: 85%;opacity: 0.8;left:90%;}
+    50%{top: 40%;opacity:0.5;left:90%;}
+    to {top: 10%;opacity: 0;left:50%;}
+ }

@@ -8,4 +8,19 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+    background-image: url('./../assets/img/espacio1.jpg');
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    background-position: 0%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    // -webkit-background-size: contain;
+    // -moz-background-size: contain;
+    // -o-background-size: contain;
+    // background-size: contain;
+
 }
+
