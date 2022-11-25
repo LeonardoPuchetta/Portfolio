@@ -1,7 +1,16 @@
-import React from 'react'
+import React ,{useState,useEffect} from 'react';
 
-export default function Projects() {
+import ProjectsItemsListContainer from '../components/ProjectsItemsListContainer';
+import {projects} from './../utils/projects'
+//page
+export default function Projects(props) {
+
+  useEffect(() => {
+   
+  }, [])
+  
+
   return (
-    <div>Projects</div>
+    <><ProjectsItemsListContainer projects={projects}/></>
   )
 }

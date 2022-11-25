@@ -8,7 +8,9 @@
 
 ## Extras  :
 
-- Animacion mouse 
+- Animacion mouse
+- Animacion carga con logo , se debe poner un delay ? 
+
 
 ### **Home/Inicio**
 
@@ -44,6 +46,13 @@
 ### **Proyectos/Projects**
 
 - Formas de presentar una lista de proyectos :
+
+- imagen del proyecto interactiva : si 
+- tecnologias implementadas : si 
+- recuadro con descripcion : si 
+- iconos con enlace externo y github : si 
+
+
 
 <br/>
 

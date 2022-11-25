@@ -1,25 +1,22 @@
 import React ,{useState,useEffect}from 'react';
-import { BasicButton } from '../components/BasicButton';
-import {Link} from 'react-router-dom';
 
+import {Link} from 'react-router-dom'
 import RocketAnimatedIcon from '../components/RocketAnimatedIcon';
 import AstroAnimatedIcon from '../components/AstroAnimatedIcon';
 import AlienAnimatedIcon from '../components/AlienAnimatedIcon';
+
 
 import './../Styles/Home.scss'
 
 export default function Home() {
 
-
-  const [iconsIdsArray, setIconsIdsArray] = useState(['rocket','astro','alien','rocket-1','astro-1','alien-1']);
+  const [iconsIdsArray, setIconsIdsArray] = useState(['rocket','astro','alien','rocket','astro','alien','rocket','astro','alien',
+  'rocket','astro']);
 
   const iconRender = {
-    'rocket' : () => {return (<RocketAnimatedIcon rocketId={'rocket'} />) },
-    'astro' : () => {return (<AstroAnimatedIcon astroId={'astro'} />) },
-    'alien' : () => {return (<AlienAnimatedIcon alienId={'alien'}/>) },
-    'rocket-1' : () => {return (<RocketAnimatedIcon rocketId={'rocket-1'} />) },
-    'astro-1' : () => {return (<AstroAnimatedIcon astroId={'astro-1'} />) },
-    'alien-1' : () => {return (<AlienAnimatedIcon alienId={'alien-1'}/>) },
+    'rocket' : (id) => {return (<RocketAnimatedIcon rocketId={id} key={id}/>) },
+    'astro' : (id) => {return (<AstroAnimatedIcon astroId={id} key={id}/>) },
+    'alien' : (id) => {return (<AlienAnimatedIcon alienId={id} key={id}/>) },
   }
 
  
@@ -29,13 +26,20 @@ export default function Home() {
     <div>
       <h1>Leonardo Puchetta</h1>
     </div>
- 
-    {iconsIdsArray.map((iconId) => {
+
+    {iconsIdsArray.map((icon,index) => {
       return(
-       iconRender[iconId]()
+       iconRender[icon](index)
       )
     })}
-    
+
+    <div>
+      <Link to='/projects'>to projects</Link>
+    </div>
+
+
+ 
+  
     </>
   )
 }

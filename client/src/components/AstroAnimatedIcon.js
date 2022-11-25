@@ -7,6 +7,7 @@ import astroImage from './../assets/icons/astronaut.svg'
 export default function AstroAnimatedIcon(props) {
 
     const {astroId} = props;
+    
 
     // const [newAstro,setNewAstro] = useState(false);
 
@@ -20,20 +21,19 @@ export default function AstroAnimatedIcon(props) {
     
       //asignacion de clases 
       let x = document.getElementById(astroId);
+      
       x.removeAttribute('class')
       
       objectOriginSizeClassAstro[random_size][random_origin](x);
     
       //hacemos el objeto visible
-    //   changeVisibilityDelays[random_size](x);
+   
       x.style.display="block";
       x.style.opacity='0'
     
     }, []);
 
-    // setInterval(() => setNewAstro(!newAstro), 8000)
-    
-
+ 
      const objectOriginSizeClassAstro = {
         "astro-big" : {
             10 : (icon) => {icon.classList.add('astro-big-10','astro-big')},

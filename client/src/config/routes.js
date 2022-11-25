@@ -1,5 +1,6 @@
 
-import LayoutBasic from "../layouts/LayoutBasic";
+import LayoutHome from "../layouts/LayoutHome";
+import LayoutProjects from "../layouts/LayoutProjects";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Projects from "../pages/Projects";
@@ -10,22 +11,22 @@ import Error404 from "../pages/Error404";
 const routes =[
     {
         path: "/",
-        layout : LayoutBasic,
+        layout : LayoutHome,
         component : Home
     },
     {
         path: "/about",
-        layout : LayoutBasic,
+        layout : LayoutHome,
         component : About
     },
     {
         path: "/projects",
-        layout : LayoutBasic,
+        layout : LayoutProjects,
         component : Projects
     },
     {
         path: "*",
-        layout : LayoutBasic,
+        layout : LayoutHome,
         component : Error404
     }
 

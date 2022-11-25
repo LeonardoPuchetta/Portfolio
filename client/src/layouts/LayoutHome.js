@@ -1,8 +1,8 @@
 import React from 'react';
-import './../Styles/LayoutBasic.scss'
+import './../Styles/LayoutHome.scss'
 
 
-export default function LayoutBasic(props) {
+export default function LayoutHome(props) {
 
     const {children} = props;
 
