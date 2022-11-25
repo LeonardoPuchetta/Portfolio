@@ -10,8 +10,7 @@ import './../Styles/Home.scss'
 
 export default function Home() {
 
-  const [iconsIdsArray, setIconsIdsArray] = useState(['rocket','astro','alien','rocket','astro','alien','rocket','astro','alien',
-  'rocket','astro']);
+  const [iconsIdsArray, setIconsIdsArray] = useState(['rocket','astro','alien','rocket','astro']);
 
   const iconRender = {
     'rocket' : (id) => {return (<RocketAnimatedIcon rocketId={id} key={id}/>) },

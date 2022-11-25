@@ -1,4 +1,7 @@
 .projects-items-list-container{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    
     display: flex;
     max-width: 75%;
     flex-direction: column;

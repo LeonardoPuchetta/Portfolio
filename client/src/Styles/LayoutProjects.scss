@@ -1,11 +1,11 @@
 @import './variables.scss';
 
-
-.container-home{
-    text-align: center;
+.container-projects{
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr  ;
+    justify-items: center;
     background-color: $background-primary-dark;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
+
 }

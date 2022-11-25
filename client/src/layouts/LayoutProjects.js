@@ -6,7 +6,7 @@ export default function LayoutProjects(props) {
     const {children} = props;
 
   return (
-    <div className='container-home'>
+    <div className='container-projects'>
         {children}
     </div>
   )

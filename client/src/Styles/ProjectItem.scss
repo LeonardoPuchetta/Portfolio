@@ -1,57 +1,161 @@
 @import './variables.scss';
 
+// .project-item{
+
+//     &-container{
+//         display: flex;
+//         position: relative;
+//         flex-direction: row; 
+//         flex-wrap: nowrap;
+//         align-items: center;
+//         justify-content:space-between;
+//         width: fit-content;
+//         color:rgb(176, 191, 204);
+//         margin-top: 3rem;
+//         margin-bottom: 3rem; 
+//         background-color: $background-primary-dark;  
+//     }
+//     &-info{
+//         display: flex;
+//         flex-direction: column;
+//         position: absolute;
+//         width: 55%;
+//         height: auto;
+//         margin: 0.5rem;
+//         z-index: 1;
+//         // background-color: aqua;
+//     }
+//     &-title{
+        
+//         position: relative;
+//         align-self: flex-start;
+//         margin-bottom: 0.8rem;
+//         font-weight: bold;
+        
+//     }
+//     &-description{
+
+//         background-color: $background-secundary;
+//         font-size: 1.1vmax;
+//         align-self: center;
+//         padding:0.8rem;
+//         z-index: 2;
+//         border-radius: 0.15rem;  
+//     }
+//     &-skills{
+//         align-self: flex-start;//
+//         margin-top: 0rem;
+
+//         .skills-ul{
+//             padding: 0;
+//         }
+//         .skill-li{
+//             list-style:none;
+//             display: inline;
+//             margin: 0; 
+//             margin-right: 0.38rem;
+            
+    
+//         }
+//     }
+//     &-image{ 
+//         height: auto;
+        
+//         img{
+//             width: 50%;
+//             float:right;//
+            
+//             border-radius: 0.15rem; 
+             
+//         }
+//     }
+
+
+
 .project-item{
 
-    &-container{
-        display: flex;
-        position: relative;
-        flex-direction: row; 
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content:space-between;
-    
-        background-color: $background-primary-dark;
-        color:rgb(176, 191, 204);
-        margin-top: 3rem;
-        margin-bottom: 3rem;   
-    }
-    &-info{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        width: 50%;
-        height: auto;
-        margin: 1rem;
-        z-index: 1;
-    }
-    &-title{
-        
-        position: relative;
-        align-self: flex-start;//
-        margin-bottom: 1.2rem;
-        
-    }
-    &-description{
+        &-container{
+            display: grid;
+            margin-top: 3rem;
+            margin-bottom: 3rem; 
+            color:rgb(176, 191, 204);
 
-        background-color: $background-secundary;
-        font-size: 1.2vmax;
-        align-self: center;
-        padding:0.8rem;
-        z-index: 2;
-        border-radius: 0.15rem;  
-    }
-    &-skills{
-        align-self: flex-start;//
-        margin-top: 0.8rem;
-    }
-    &-image{ 
-        height: auto;
-        img{
-            width: 55%;
-            float:right;//
-            border-radius: 0.15rem;     
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 1fr;
+            justify-items: center;
+            
+             
         }
-    }
+        &-info{
+            
+            grid-column: 1/8;
+            grid-row: 1/2;
+            z-index: 1;
+            padding: 0;
+            margin: 0;
+            
+        }
+        &-title{
+            
+            position: relative;
+            // align-self: flex-start;
+            margin-bottom: 0.8rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+            
+            
+        }
+        &-description{
+    
+            background-color: $background-secundary;
+            font-size: 1.1vmax;
+            align-self: center;
+            padding:1rem;
+            text-align: justify;
+            z-index: 2;
+            border-radius: 0.15rem;  
+        }
+        &-skills{
+            align-self: flex-start;
+            margin-top: 0rem;
+    
+            .skills-ul{
+                padding: 0;
+            }
+            .skill-li{
+                list-style:none;
+                display: inline;
+                margin: 0; 
+                margin-right: 0.38rem;
+                font-weight: bolder;
+                
+        
+            }
+        }
+        &-image{ 
+            // height: auto;
+            grid-column:7/13;
+            grid-row:1/2;
+            background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+            border-radius: 0.15rem;
+            
+            img{
+                
+                inline-size: 100%;
+                border-radius: 0.15rem; 
+                opacity: 0.10;
+                transition: opacity 1s ease;
+            }
+            img:hover{
+                opacity: 0.6;
+            }
+        }
+    
+}
 
+
+@keyframes mask-image{
+    from{opacity: 0 }
+    to{ opacity:1}
 }
 
