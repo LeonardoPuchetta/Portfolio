@@ -3,7 +3,7 @@ export const projects = [
         'title': "Maquetacion CSS",
         'description':"  only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
         "skills" : ['CSS','HTML'],
-        "image" : 'https://thumbs.dreamstime.com/b/projects-lead-us-to-success-our-personal-professional-life-necessary-reach-our-goals-everyday-92274762.jpg'
+        "image" : 'https://149695847.v2.pressablecdn.com/wp-content/uploads/2020/01/top-10-DS-projects.png'
     },
     {
         'title': "Proyecto1",

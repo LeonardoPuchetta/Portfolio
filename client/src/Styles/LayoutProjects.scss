@@ -2,10 +2,16 @@
 
 .container-projects{
     display: grid;
-    grid-template-columns: 1fr 10fr 1fr  ;
+    grid-template-columns: 1fr 10fr 1fr ;
     justify-items: center;
     background-color: $background-primary-dark;
     min-height: 100vh;
     
 
+}
+.navbar{
+    grid-column: 1/2;
+    background-color: aquamarine;
+    margin-left: 0;
+    
 }

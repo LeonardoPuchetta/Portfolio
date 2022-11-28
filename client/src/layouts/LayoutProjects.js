@@ -7,6 +7,7 @@ export default function LayoutProjects(props) {
 
   return (
     <div className='container-projects'>
+      <div className='navbar'>Navbar</div>
         {children}
     </div>
   )

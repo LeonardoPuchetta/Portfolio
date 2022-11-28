@@ -1,119 +1,37 @@
 @import './variables.scss';
 
-// .project-item{
-
-//     &-container{
-//         display: flex;
-//         position: relative;
-//         flex-direction: row; 
-//         flex-wrap: nowrap;
-//         align-items: center;
-//         justify-content:space-between;
-//         width: fit-content;
-//         color:rgb(176, 191, 204);
-//         margin-top: 3rem;
-//         margin-bottom: 3rem; 
-//         background-color: $background-primary-dark;  
-//     }
-//     &-info{
-//         display: flex;
-//         flex-direction: column;
-//         position: absolute;
-//         width: 55%;
-//         height: auto;
-//         margin: 0.5rem;
-//         z-index: 1;
-//         // background-color: aqua;
-//     }
-//     &-title{
-        
-//         position: relative;
-//         align-self: flex-start;
-//         margin-bottom: 0.8rem;
-//         font-weight: bold;
-        
-//     }
-//     &-description{
-
-//         background-color: $background-secundary;
-//         font-size: 1.1vmax;
-//         align-self: center;
-//         padding:0.8rem;
-//         z-index: 2;
-//         border-radius: 0.15rem;  
-//     }
-//     &-skills{
-//         align-self: flex-start;//
-//         margin-top: 0rem;
-
-//         .skills-ul{
-//             padding: 0;
-//         }
-//         .skill-li{
-//             list-style:none;
-//             display: inline;
-//             margin: 0; 
-//             margin-right: 0.38rem;
-            
-    
-//         }
-//     }
-//     &-image{ 
-//         height: auto;
-        
-//         img{
-//             width: 50%;
-//             float:right;//
-            
-//             border-radius: 0.15rem; 
-             
-//         }
-//     }
-
-
-
 .project-item{
-
         &-container{
             display: grid;
             margin-top: 3rem;
             margin-bottom: 3rem; 
             color:rgb(176, 191, 204);
-
-            grid-template-columns: repeat(12, 1fr);
+            grid-template-columns: repeat(13, 1fr);
             grid-template-rows: 1fr;
             justify-items: center;
-            
-             
         }
-        &-info{
-            
-            grid-column: 1/8;
+        &-info{ 
+      
             grid-row: 1/2;
             z-index: 1;
             padding: 0;
-            margin: 0;
-            
+            margin: 0; 
         }
         &-title{
-            
             position: relative;
-            // align-self: flex-start;
             margin-bottom: 0.8rem;
             font-weight: bold;
-            font-size: 1.2rem;
-            
-            
+            font-size: 1.2rem; 
         }
         &-description{
-    
             background-color: $background-secundary;
-            font-size: 1.1vmax;
+            // font-size: 1.1vmax;
             align-self: center;
             padding:1rem;
             text-align: justify;
             z-index: 2;
-            border-radius: 0.15rem;  
+            border-radius: 0.15rem; 
+            opacity: 0.9; 
         }
         &-skills{
             align-self: flex-start;
@@ -128,34 +46,173 @@
                 margin: 0; 
                 margin-right: 0.38rem;
                 font-weight: bolder;
-                
-        
             }
         }
-        &-image{ 
-            // height: auto;
-            grid-column:7/13;
-            grid-row:1/2;
-            background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-            border-radius: 0.15rem;
+        &-image{
             
+            grid-row:1/2;
+            align-self: center;
+            background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+            background-size:cover;
+            background-position:center;
+            background-repeat:no-repeat;
+            background-attachment: contain;
+            border-radius: 0.15rem;
             img{
-                
                 inline-size: 100%;
                 border-radius: 0.15rem; 
                 opacity: 0.10;
-                transition: opacity 1s ease;
+                transition: opacity 1s ease; 
+        
             }
             img:hover{
                 opacity: 0.6;
             }
         }
+        &-links{
+            grid-column:13/14;
+            grid-row:1/2;
+            place-self: center;
+            padding: 0;
+
+            &-list{
+                padding-inline-start: 0rem;
+                padding-inline-end: 0rem;
+
+                &-li{
+                    list-style:none;
+                }
+            }  
+        }
+}
+
+
+
+.project-item-left{
+    &-info{ 
+        grid-column: 1/8;
+    }
+    &-image{
+        grid-column:7/13;   
+    }
+    &-links{
+        grid-column:13/14;
+    }
+}
+.project-item-right{
+    &-info{ 
+        grid-column:7/14;
+    }
+    &-title{
+        text-align: right
+    }
+
+    &-skills{
+        text-align: right;
+    }
+    &-image{
+        grid-column:2/8;
+    }
+    &-links{
+        grid-column:1/2;
+    }
+}
+
+.icon-link{
+    // z-index: 2;
+    width: 1rem;
+    height: 1rem;
+    margin: 0.4rem;
+    opacity: 0.4;
+    filter: invert(100%);
+}
+.icon-link:hover{
+    opacity: 1;
+ 
+}
+
+@media screen and (min-width: $media-breackpoint-up-md) and (max-width:$media-breackpoint-down-lg) {
+    .project-item-left{
+
+        &-info{ 
+            grid-column: 1/9;
+        }
+        &-image{
+            grid-column:6/13; 
+        }
+    }
+
+    .project-item-right{
+
+        &-info{ 
+            grid-column:6/14;
+        }
+        &-image{
+            grid-column:2/9;
+        }
+        &-links{
+            grid-column:1/2;
+        }
     
-}
+    }
+    
+  }
+
+  @media screen and (min-width: $media-breackpoint-up-sm) and (max-width:$media-breackpoint-down-md) {
+    .project-item-left{
+
+        &-info{ 
+            grid-column: 1/11;
+            opacity: 0.8;
+        }
+        &-image{
+            grid-column:4/13;   
+        }
+        }
+    .project-item-right{
+
+            &-info{ 
+                grid-column:4/14;
+            }
+
+            &-image{
+                grid-column:2/11;
+            }
+ 
+        }
 
 
-@keyframes mask-image{
-    from{opacity: 0 }
-    to{ opacity:1}
+  }
+
+  @media screen and (min-width: $media-breackpoint-up-xs) and (max-width:$media-breackpoint-down-sm) {
+    .project-item-left{
+
+        &-info{ 
+            grid-column: 1/13;
+        }
+        &-image{
+            grid-column:1/13;
+            
+        }
+        &-links{
+           margin: 0.5rem;
+        }
+        }
+    .project-item-right{
+
+            &-info{ 
+                grid-column:2/14;
+            }
+
+            &-image{
+                grid-column:2/14;
+            }
+            &-links{
+                margin: 0.5rem;
+             }
+        
+        }
+
 }
+  
 
