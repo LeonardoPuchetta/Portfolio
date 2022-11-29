@@ -5,10 +5,13 @@
             display: grid;
             margin-top: 3rem;
             margin-bottom: 3rem; 
-            color:rgb(176, 191, 204);
+            color:rgb(194, 198, 201);
             grid-template-columns: repeat(13, 1fr);
+           
+
             grid-template-rows: 1fr;
             justify-items: center;
+           
         }
         &-info{ 
       
@@ -16,29 +19,45 @@
             z-index: 1;
             padding: 0;
             margin: 0; 
+            
+        
         }
         &-title{
             position: relative;
             margin-bottom: 0.8rem;
             font-weight: bold;
             font-size: 1.2rem; 
+            color: #fbc2eb;
+            font-weight: 500;
         }
         &-description{
             background-color: $background-secundary;
-            // font-size: 1.1vmax;
             align-self: center;
             padding:1rem;
             text-align: justify;
             z-index: 2;
             border-radius: 0.15rem; 
             opacity: 0.9; 
+           
+            
         }
         &-skills{
+
             align-self: flex-start;
-            margin-top: 0rem;
-    
+            margin: 0rem;
+            color:$background-secundary;
+            color: #fbc2eb;
+            font-weight: 349;
+            
+            
+            
+           
             .skills-ul{
                 padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+                position: relative;
+                z-index: 2;
             }
             .skill-li{
                 list-style:none;
@@ -102,6 +121,7 @@
 .project-item-right{
     &-info{ 
         grid-column:7/14;
+
     }
     &-title{
         text-align: right
@@ -109,6 +129,9 @@
 
     &-skills{
         text-align: right;
+        float: right;
+        direction: rtl;
+        
     }
     &-image{
         grid-column:2/8;
@@ -198,18 +221,31 @@
            margin: 0.5rem;
         }
         }
-    .project-item-right{
+
+        .project-item-right{
 
             &-info{ 
-                grid-column:2/14;
+                grid-column: 1/13;
+            }
+            &-title{
+                text-align:left;
+            }
+            &-skills{
+                
+                float: left;
+                direction: ltr;
+                text-align: left;
+                
             }
 
             &-image{
-                grid-column:2/14;
+                grid-column:1/13;
             }
-            &-links{
+          
+             &-links{
                 margin: 0.5rem;
-             }
+                grid-column:13/14;
+            }
         
         }
 

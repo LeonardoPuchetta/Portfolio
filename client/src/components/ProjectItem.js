@@ -10,6 +10,7 @@ import ProjectItemImage from './ProjectItemImage';
 export default function ProjectItem(props) {
 
     const {project,order} = props;
+
     const {title,description,image,skills} = project;
 
     useEffect(() => {
@@ -17,7 +18,7 @@ export default function ProjectItem(props) {
     }, [order])
     
   return (
-    <div className='project-item-container'>
+    <div className='project-item-container' data-aos="fade-up" data-aos-duration="3500">
         <div className='project-item-info'>
             <div className='project-item-title'>{title}</div>
             <div className='project-item-description'><p>{description}</p></div>
@@ -37,12 +38,12 @@ export default function ProjectItem(props) {
         <div className='project-item-links'>
             <ul className='project-item-links-list'>
                     <li className='project-item-links-list-li'>
-                        <a href='https://github.com/LeonardoPuchetta/Portfolio.git'>
+                        <a href='https://github.com/LeonardoPuchetta/Portfolio.git' target='_blank'>
                             <img src={GithubIcon} className='icon-link'/>
                         </a>
                     </li>
                     <li className='project-item-links-list-li'>
-                        <a href=''>
+                        <a href='' target='_blank'>
                             <img src={ExternalIcon} className='icon-link'/>
                         </a>
                     </li>
