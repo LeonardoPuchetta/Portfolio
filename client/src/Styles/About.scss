@@ -1,0 +1,74 @@
+
+@import './variables.scss';
+
+.about{
+
+display:grid;
+text-align: center;
+min-height: 100vh;
+background-color: $background-secundary-dark;
+
+  
+
+    &-description{
+        padding: 4rem;
+        h1{
+            margin-bottom: 1rem;
+            color:wheat;
+            
+        }
+        p{
+            margin-top: 4vh; 
+        }
+        img{
+            margin-top: 4vh;
+        }
+
+    }
+
+}
+
+.icon-download{
+    width: 3.2rem;
+    height: 3.2rem;
+    
+}
+
+@media screen and (min-width: $media-breackpoint-up-md) and (max-width:$media-breackpoint-down-lg){
+    .about{
+        &-description{
+            padding: 2.5rem;
+        }
+    }
+    .icon-download{
+        width: 3rem;
+        height: 3rem;
+        
+    }
+}
+
+@media screen and (min-width: $media-breackpoint-up-sm) and (max-width:$media-breackpoint-down-md){
+    .about{
+        &-description{
+            padding: 2rem;
+        }
+    }
+    .icon-download{
+        width: 2.5rem;
+        height: 2.5rem;
+        
+    }
+}
+
+@media screen and (min-width: $media-breackpoint-up-xs) and (max-width:$media-breackpoint-down-sm){
+    .about{
+        &-description{
+            padding: 1.5rem;
+        }
+    }
+    .icon-download{
+        width: 2.5rem;
+        height: 2.5rem;
+        
+    }
+}

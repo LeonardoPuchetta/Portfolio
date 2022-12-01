@@ -1,6 +1,6 @@
 .container{
     text-align: center;
-    background-color: #282c34;
+    // background-color: #282c34;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -17,10 +17,8 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    // -webkit-background-size: contain;
-    // -moz-background-size: contain;
-    // -o-background-size: contain;
-    // background-size: contain;
+    opacity: 0.92;
+   
 
 }
 

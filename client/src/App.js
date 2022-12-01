@@ -1,11 +1,13 @@
 
-import React,{useEffect} from "react";
+import React,{useEffect,useState} from "react";
 import {
   BrowserRouter as Router,
   Route,
   Routes 
 } from "react-router-dom";
 import routes from './config/routes' ;
+
+import Loading from "./components/Loading";
 
 
 import AOS from 'aos';
@@ -14,6 +16,8 @@ import "aos/dist/aos.css";
 
 
 function App() {
+
+  const [loading,setLoading]=useState(true);
 
   useEffect(()=>{
     const script = document.createElement("script");
@@ -26,10 +30,15 @@ function App() {
     AOS.init({
       duration : 2000
     });
-  },[])
 
+    setTimeout(()=>{
+      setLoading(false)
+    },2500)
 
-  return (
+    },[]);
+
+  if (loading) return (<Loading/>) 
+  else return (
     <Router>
           <Routes>
             {routes.map((route,index) => (

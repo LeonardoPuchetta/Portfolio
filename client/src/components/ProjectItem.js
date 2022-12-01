@@ -1,11 +1,11 @@
 import React,{useEffect} from 'react';
 import './../Styles/ProjectItem.scss';
-import {Link} from 'react-router-dom';
+
 
 import GithubIcon from './../assets/icons/github.svg';
 import ExternalIcon from './../assets/icons/external-link.svg'
 
-import ProjectItemImage from './ProjectItemImage';
+
 
 export default function ProjectItem(props) {
 
@@ -18,7 +18,7 @@ export default function ProjectItem(props) {
     }, [order])
     
   return (
-    <div className='project-item-container' data-aos="fade-up" data-aos-duration="3500">
+    <div className='project-item-container' data-aos="fade-up" data-aos-duration="3000">
         <div className='project-item-info'>
             <div className='project-item-title'>{title}</div>
             <div className='project-item-description'><p>{description}</p></div>
@@ -89,3 +89,4 @@ const alternateItem = (order) =>{
     }
 
 }
+

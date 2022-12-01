@@ -47,10 +47,13 @@
 
 - Formas de presentar una lista de proyectos :
 
-- imagen del proyecto interactiva : si 
-- tecnologias implementadas : si 
+
+- tecnologias implementadas : si  
 - recuadro con descripcion : si 
 - iconos con enlace externo y github : si 
+
+- BRILLO AL TITULO :
+-  animacion color del titulo al hacer hover en recuadro del project 
 
 
 
@@ -75,4 +78,28 @@
 - Boostrap ? 
 - SQL ? 
 - FireBase ? 
+
+
+- Instagram links : 
+
+- imagenes : https://www.instagram.com/p/CkGfWuorkfX/ 
+- colores : https://pigment.shapefactory.co/
+- texto : https://www.instagram.com/p/CjXgfbUD62B/
+
+
+Pendientes : 
+- Animacion carga con logo , se debe poner un delay ? 
+- Animacion inicial 
+- BRILLO AL TITULO :
+-  animacion color del titulo al hacer hover en recuadro del project 
+- cambio de tema claro/oscuro con useContext de react ?
+
+- curriculum  page , pdf  crear/pdf/descarga
+- about me page      retocar/animar  
+- animacion logo de load 
+- colores            
+
+
+
+
 

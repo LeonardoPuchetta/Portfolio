@@ -4,13 +4,14 @@
     grid-column: 1/2;
     min-height: 100%;
     padding: 0;
+    margin-left:3vw;
+    margin-right: 3vw;
     
 
     &-icon-list-ul{
         position:sticky;
         top:40vh;
-        padding-inline-start: 2vw;
-
+        padding-inline-start: 0;
 
         
     }
@@ -27,8 +28,22 @@
     }
     &-icon-link:hover{
         opacity: 1;
-     
+        animation: move-x-right 1s ease infinite ;
     }
 
+}
+
+
+@keyframes move-x-right {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform:translateX(3.5px)
+    }
+ 
+    100%{
+        transform: translateX(0px);
+    }
 }
 

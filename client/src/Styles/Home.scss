@@ -1,0 +1,56 @@
+.home-title{
+
+    font-family:monospace;
+    font-size: small;
+    background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #FFD700);
+    color: transparent;    
+    background-clip: text;
+    cursor:default;  
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-image-container{
+    position: relative;
+  cursor: pointer;
+}
+.span-tooltip{
+    position: absolute;
+    color:wheat;
+    top:50%;
+    height: 1.3rem;
+    //se podria tener otra forma de acceso 
+    background-image: url('https://i.pinimg.com/originals/ca/db/91/cadb910ce65ddf4b84d3a53950afe71f.jpg');
+    // background-color: #182365;
+    font-size: 0.9rem;
+    overflow: hidden;
+    width: 0;
+    opacity: 0.8;
+}
+
+
+.icon-image{
+    width: 3rem;
+    height: 3rem;
+    margin: 2vw;
+}
+.icon-image-container:hover .span-tooltip{
+    width: 4rem;
+    transition: 1.8s;
+    border-radius: 0.5rem;
+    padding: 0.4rem;
+
+}
+
+.icon-image:hover{
+    animation:  pulsacion 1.5s ease infinite ;
+}
+
+@keyframes pulsacion{
+    0%  { transform:scale(1.1) }
+    50% { -webkit-transform:scale(.8); }
+    100%{ transform:scale(1.1) }
+  }
