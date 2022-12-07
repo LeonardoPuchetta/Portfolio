@@ -1,11 +1,21 @@
 .home-title{
+    //se podria tener otra forma de acceso 
+    background-image: url('https://i.pinimg.com/originals/ca/db/91/cadb910ce65ddf4b84d3a53950afe71f.jpg');
+    opacity: 0.9;
+    padding: 0.3rem 0.4rem 0.3rem 0.4rem ;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    cursor:default; 
+}
 
+#title{
+    margin:0;
     font-family:monospace;
-    font-size: small;
+    // font-size:1.8rem;
     background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #FFD700);
-    color: transparent;    
+    color: transparent; 
     background-clip: text;
-    cursor:default;  
+    
 }
 
 .icons{
@@ -15,16 +25,16 @@
 
 .icon-image-container{
     position: relative;
-  cursor: pointer;
+    cursor: pointer;
 }
 .span-tooltip{
     position: absolute;
     color:wheat;
+    font-family: monospace;
     top:50%;
     height: 1.3rem;
     //se podria tener otra forma de acceso 
     background-image: url('https://i.pinimg.com/originals/ca/db/91/cadb910ce65ddf4b84d3a53950afe71f.jpg');
-    // background-color: #182365;
     font-size: 0.9rem;
     overflow: hidden;
     width: 0;
@@ -38,10 +48,10 @@
     margin: 2vw;
 }
 .icon-image-container:hover .span-tooltip{
-    width: 4rem;
-    transition: 1.8s;
+    width: 4.5rem;
+    transition: 1.3s;
     border-radius: 0.5rem;
-    padding: 0.4rem;
+    padding: 0.32rem 0.32rem 0.17rem 0.32rem;
 
 }
 

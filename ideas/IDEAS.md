@@ -88,16 +88,22 @@
 
 
 Pendientes : 
-- Animacion carga con logo , se debe poner un delay ? 
-- Animacion inicial 
-- BRILLO AL TITULO :
--  animacion color del titulo al hacer hover en recuadro del project 
+
+-GENERAL
 - cambio de tema claro/oscuro con useContext de react ?
 
+-ABOUT
 - curriculum  page , pdf  crear/pdf/descarga
-- about me page      retocar/animar  
+- about me page      retocar/animar 
+- about - foto con mascara en rejilla que se aleja al hacer hover  
+
+-HOME
 - animacion logo de load 
-- colores            
+- colores     
+
+- pequeño problema al renderizar iconos de animacion home al iniciar 
+
+
 
 
 

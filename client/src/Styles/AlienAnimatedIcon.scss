@@ -1,6 +1,7 @@
 //clases de aliennauta dependiendo del tamaño
 //total 3 clases
 .alien-big{
+    overflow: hidden;
     display: none; 
     width: 7vmin;
     height: 7vmin;
@@ -11,6 +12,8 @@
         }
 }
 .alien-medium{
+    overflow: hidden;
+
     display: none; 
     width: 4.5vmin;
     height: 4.5vmin;
@@ -21,6 +24,7 @@
         }
 }
 .alien-small{
+    overflow: hidden;
     display: none; 
     width: 2.5vmin;
     height: 2.5vmin;
@@ -173,27 +177,27 @@
 
 //animaciones aliennauta 
 @keyframes alien-origin-10{
-    from {top: 80%;opacity: 0.8;left:10%;}
+    from {top: 83%;opacity: 0.8;left:10%;}
     50%{top: 50%;opacity:0.5;left:80%}
     to {top: 20%;opacity: 0;left:50%;}
  }
  @keyframes alien-origin-30{
-    from {top: 80%;opacity: 0.8;left:30%;}
+    from {top: 83%;opacity: 0.8;left:30%;}
     50%{top: 40%;opacity:0.5;left:70%}
     to {top: 20%;opacity: 0;left:50%;}
  }
  @keyframes alien-origin-50{
-    from {top: 80%;opacity: 0.8;left:50%;}
+    from {top: 83%;opacity: 0.8;left:50%;}
     50%{top: 50%;opacity:0.5;left:10%}
     to {top: 20%;opacity: 0;left:50%;}
  }
  @keyframes alien-origin-70{
-    from {top: 80%;opacity: 0.8;left:70%;}
+    from {top: 83%;opacity: 0.8;left:70%;}
     50%{top: 40%;opacity:0.5;left:90%}
     to {top: 20%;opacity: 0;left:50%;}
  }
  @keyframes alien-origin-90{
-    from {top: 80%;opacity: 0.8;left:90%;}
+    from {top: 83%;opacity: 0.8;left:90%;}
     50%{top: 40%;opacity:0.5;left:20%}
     to {top: 20%;opacity: 0;left:50%;}
  }

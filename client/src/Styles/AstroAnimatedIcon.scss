@@ -1,6 +1,7 @@
 //clases de astronauta dependiendo del tamaño
 //total 3 clases
 .astro-big{
+    overflow: hidden;
     display: none; 
     width: 7vmin;
     height: 7vmin;
@@ -11,6 +12,7 @@
         }
 }
 .astro-medium{
+    overflow: hidden;
     display: none; 
     width: 4.5vmin;
     height: 4.5vmin;
@@ -21,6 +23,7 @@
         }
 }
 .astro-small{
+    overflow: hidden;
     display: none; 
     width: 3vmin;
     height: 3vmin;
@@ -173,27 +176,27 @@
 
 //animaciones astronauta 
 @keyframes astro-origin-10{
-    from {top: 80%;opacity: 0.8;left:10%;}
+    from {top: 83%;opacity: 0.8;left:10%;}
     50%{top: 50%;opacity:0.5;}
     to {top: 20%;opacity: 0;left:50%;}
  }
  @keyframes astro-origin-30{
-    from {top: 80%;opacity: 0.8;left:30%;}
+    from {top: 83%;opacity: 0.8;left:30%;}
     50%{top: 40%;opacity:0.5;}
     to {top: 20%;opacity: 0;left:50%;}
  }
  @keyframes astro-origin-50{
-    from {top: 80%;opacity: 0.8;left:50%;}
+    from {top: 83%;opacity: 0.8;left:50%;}
     50%{top: 50%;opacity:0.5;}
     to {top: 20%;opacity: 0;left:50%;}
  }
  @keyframes astro-origin-70{
-    from {top: 80%;opacity: 0.8;left:70%;}
+    from {top: 83%;opacity: 0.8;left:70%;}
     50%{top: 40%;opacity:0.5;}
     to {top: 20%;opacity: 0;left:50%;}
  }
  @keyframes astro-origin-90{
-    from {top: 80%;opacity: 0.8;left:90%;}
+    from {top: 83%;opacity: 0.8;left:90%;}
     50%{top: 40%;opacity:0.5;}
     to {top: 20%;opacity: 0;left:50%;}
  }

@@ -2,6 +2,7 @@
 //clases de cohete dependiendo del tamaño
 //total 3 clases
 .rocket-big{
+    overflow: hidden;
     display: none; 
     width: 8vmin;
     height: 8vmin;
@@ -12,6 +13,7 @@
         }
 }
 .rocket-medium{
+    overflow: hidden;
     display: none; 
     width: 5vmin;
     height: 5vmin;
@@ -22,6 +24,7 @@
         }
 }
 .rocket-small{
+    overflow: hidden;
     display: none; 
     width: 4vmin;
     height: 4vmin;
@@ -208,12 +211,12 @@
 //total 5 animaciones
 //left rockets
 @keyframes rocket-origin-10{
-    from {top: 80%;opacity: 0.8;left:10%;}
+    from {top: 83%;opacity: 0.8;left:10%;}
     50%{top: 65%;opacity:0.5;left:10%;}
     to {top: 20%;opacity: 0;left:50%;}
  }
  @keyframes rocket-origin-30{
-    from {top: 80%;opacity: 0.8;left:30%;}
+    from {top: 83%;opacity: 0.8;left:30%;}
     50%{top: 65%;opacity:0.5;left:30%;}
     to {top: 20%;opacity: 0;left:50%;}
  }

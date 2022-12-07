@@ -13,7 +13,7 @@ import './../Styles/Home.scss'
 
 export default function Home() {
 
-  const [iconsIdsArray, setIconsIdsArray] = useState(['rocket','astro','alien','rocket','astro']);
+  const [iconsIdsArray, setIconsIdsArray] = useState(['rocket','astro','alien','rocket','astro','alien']);
 
   const iconRender = {
     'rocket' : (id) => {return (<RocketAnimatedIcon rocketId={id} key={id}/>) },
@@ -32,8 +32,8 @@ export default function Home() {
 
   return (
     <>
-    <div className='home-title'>
-      <h1>Portfolio - Leonardo Puchetta</h1>
+    <div className='home-title' data-aos="fade-down" data-aos-duration="3000">
+      <h1 id='title'>Portfolio - Leonardo Puchetta</h1>
     </div>
 
     {iconsIdsArray.map((icon,index) => {
@@ -42,13 +42,13 @@ export default function Home() {
       )
     })}
     <div className='icons'>
-        <div className='icon-image-container'>
+        <div className='icon-image-container' data-aos="fade-right" data-aos-duration="3000">
             <Link to='/projects'>
               <img src={ProjectsIcon} alt='proyectos' className='icon-image'/>
             </Link>
             <span className='span-tooltip' style={styleLeftTooltip}>Proyectos</span>
         </div>
-        <div className='icon-image-container'>
+        <div className='icon-image-container' data-aos="fade-left" data-aos-duration="3000">
             <Link to='/about'>
               <img src={FoxColorIcon} alt='acerca de mi' className='icon-image'/>
             </Link>  
