@@ -2,87 +2,88 @@
 @import './variables.scss';
 
 .about{
-    display: grid;
-    grid-template-columns: repeat(13, 1fr);
-    grid-template-rows: 1fr;
-    background-color: $background-secundary-dark;
-    justify-items: center;
- 
+    &-container{
+        display: grid;
+        margin: 0rem; 
+        color:rgb(194, 198, 201);
+        grid-template-columns: repeat(12, 1fr);
+        justify-items: center;
+    }
     &-image{
         grid-row:1/2;
         align-self: center;
-        grid-column: 2/7;
-        position: relative;
+        background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+        background-size:cover;
+        background-position:center;
+        background-repeat:no-repeat;
+        background-attachment: contain;
+        background-origin: content-box; 
+        border-radius: 1.3em 0rem 0rem 0rem;
+        grid-column: 1/8;
         z-index: 0;
-        
         img{ 
             inline-size: 100%;
             max-height: 50vh;
-            border-radius: 4rem 0.3rem 0.3rem 0.3rem; 
+            border-radius: 1.3rem 0rem 0rem 0rem;
             opacity: 0.5;
-            
+            //2310 2324 2540 capacitacion 
        }
     }
 
     &-description{
-        grid-column: 7/13;
-        grid-row: 1/2;
+        grid-row:1/2;
         z-index: 1;
-        padding: 0;
-        
-        background-color: $background-primary;
+        margin: 0;  
+        grid-column:6/12; 
         align-self: center;
-        padding: 1rem 2rem 1rem 2rem;    
-        border-radius: 0.3rem 0.3rem 4rem 0.3rem; 
+        background-color: $background-secundary;
+        padding: 0.5rem 1rem 1rem 2rem;
+        border-radius: 0.3rem  0.3rem 1.5rem 0.3rem;
+        opacity: 0.85;
 
-        // border-style: solid;
-        border-color: rgb(122, 118, 118);
-       
-        h1{
-            // margin-bottom: 0.5rem;
-            color:wheat;
-            font-size: calc(0.8rem + 1vw);
-            text-align: left;   
+        &-title{
+            position: relative;
+            margin-bottom: 0.2rem;
+            font-weight: bold;
+            font-size: 1.5rem; 
+            color: #fbc2eb;
+            font-weight: 500;
         }
-        p{
-            margin-top: 4vh;
-            text-align: justify;
-            color: beige;
-           
-        }
-        img{
-            // margin-top: 4vh;
-        }
-
     }
 
 }
 
-.icon-download{
-    width: 2rem;
-    height: 2rem;
-   
-    position: absolute;
-    z-index: 2;
-    right: 40%;
-    top:80%;
-   
-    
-    
-    
-    
-}
 
 @media screen and (min-width: $media-breackpoint-up-md) and (max-width:$media-breackpoint-down-lg){
-
-
+ .about{
+    &-image{
+    grid-column: 1/9;
+ }
+    &-description{
+    grid-column:5/13;
+}
+}
 }
 
 @media screen and (min-width: $media-breackpoint-up-sm) and (max-width:$media-breackpoint-down-md){
-
+    .about{
+        &-image{
+        grid-column: 1/10;
+     }
+        &-description{
+        grid-column:4/13;
+    }
+    }
 
 }
 
 @media screen and (min-width: $media-breackpoint-up-xs) and (max-width:$media-breackpoint-down-sm){
-
+    .about{
+        &-image{
+        grid-column: 1/13;
+     }
+        &-description{
+        grid-column:1/13;
+    }
+    }
 }

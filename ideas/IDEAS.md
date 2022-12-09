@@ -92,16 +92,16 @@ Pendientes :
 -GENERAL
 - cambio de tema claro/oscuro con useContext de react ?
 
--ABOUT
-- curriculum  page , pdf  crear/pdf/descarga
-- about me page      retocar/animar 
-- about - foto con mascara en rejilla que se aleja al hacer hover  
 
 -HOME
 - animacion logo de load 
-- colores     
+- foto de about 
 
-- pequeño problema al renderizar iconos de animacion home al iniciar 
+
+
+- 1931-int 9
+- personal, capacitacion refineria la teja 
+-     
 
 
 

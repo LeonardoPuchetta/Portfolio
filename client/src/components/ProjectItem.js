@@ -14,7 +14,7 @@ export default function ProjectItem(props) {
     const {title,description,image,skills} = project;
 
     useEffect(() => {
-        alternateItem(order);
+        alternateItemProject(order);
     }, [order])
     
   return (
@@ -59,7 +59,7 @@ const isPar = (num) => {
     return (num%2)
 }
 
-const alternateItem = (order) =>{
+const alternateItemProject = (order) =>{
     //se podria hacer generando ids con order para cada elemento 
     //en vez de seleccionarlos todos y elegir de un array 
     let containerDivs = document.getElementsByClassName('project-item-container');

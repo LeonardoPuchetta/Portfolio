@@ -12,8 +12,8 @@ export default function NavbarLeft() {
   const location = useLocation();
   
   return (
-    <div className='navbar-left'>
-        <ul className='navbar-left-icon-list-ul'>
+    <div className='navbar-left' data-aos="zoom-out-right">
+        <ul className='navbar-left-icon-list-ul' >
                     <li className='navbar-left-icon-list-li'>
                             <Link to='/'><img src={HomeIcon} className='navbar-left-icon-link' alt='home'/></Link>
                     </li>
