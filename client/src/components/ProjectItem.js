@@ -1,24 +1,31 @@
-import React,{useEffect} from 'react';
+import React,{useEffect,useState} from 'react';
 import './../Styles/ProjectItem.scss';
-
-
 import GithubIcon from './../assets/icons/github.svg';
-import ExternalIcon from './../assets/icons/external-link.svg'
-
-
+import ExternalIcon from './../assets/icons/external-link.svg';
+import { getImageApi } from '../api/fileProject';
+import readFile from '../utils/readFile';
 
 export default function ProjectItem(props) {
 
-    const {project,order} = props;
 
-    const {title,description,image,skills} = project;
+    const {project,order} = props;
+    const {title,description,skills,image,link,github} = project;
+    //para almacenar imagen del servidor 
+    const [dataUrlImage,setDataUrlImage] = useState(null);
 
     useEffect(() => {
-        alternateItemProject(order);
-    }, [order])
-    
+        //para asignar clases right-left
+        alternateItemProject(order);  
+        getImageApi(image).then( response =>{
+            readFile(response,setDataUrlImage)
+            }
+            ).catch(error =>{
+                console.log(error)
+            })
+    }, [order,image])
+
   return (
-    <div className='project-item-container' data-aos="fade-up" data-aos-duration="3000">
+    <div className='project-item-container' data-aos="flip-right" >
         <div className='project-item-info'>
             <div className='project-item-title'>{title}</div>
             <div className='project-item-description'><p>{description}</p></div>
@@ -32,19 +39,21 @@ export default function ProjectItem(props) {
         </div>
 
         <div className='project-item-image'>
-            <a href=''><img src={image} alt='project' className='image'></img></a>
+            <a href={link} target='_blank' rel='noopener noreferrer'>
+                <img src={dataUrlImage} alt='project' className='image'></img>
+            </a>
         </div> 
 
         <div className='project-item-links'>
             <ul className='project-item-links-list'>
                     <li className='project-item-links-list-li'>
-                        <a href='https://github.com/LeonardoPuchetta/Portfolio.git' target='_blank'>
-                            <img src={GithubIcon} className='icon-link'/>
+                        <a href={github} target='_blank' rel='noopener noreferrer'>
+                            <img src={GithubIcon} className='icon-link' alt='github'/>
                         </a>
                     </li>
                     <li className='project-item-links-list-li'>
-                        <a href='' target='_blank'>
-                            <img src={ExternalIcon} className='icon-link'/>
+                        <a href={link} target='_blank' rel='noopener noreferrer'>
+                            <img src={ExternalIcon} className='icon-link' alt='external'/>
                         </a>
                     </li>
             </ul>

@@ -15,19 +15,33 @@ export default function NavbarLeft() {
     <div className='navbar-left' data-aos="zoom-out-right">
         <ul className='navbar-left-icon-list-ul' >
                     <li className='navbar-left-icon-list-li'>
-                            <Link to='/'><img src={HomeIcon} className='navbar-left-icon-link' alt='home'/></Link>
+                      <Link to='/'><img src={HomeIcon} className='navbar-left-icon-link' alt='home'/></Link>
                     </li>
-                    {location.pathname === '/about' ? 
-                            <li className='navbar-left-icon-list-li'>
-                                  <Link to='/projects'><img src={ProjectsIcon} className='navbar-left-icon-link' alt='about'/></Link>
-                            </li> :
-                            <li className='navbar-left-icon-list-li'>
-                                  <Link to='/about'><img src={FoxIcon} className='navbar-left-icon-link' alt='about'/></Link>
-                            </li>
-                    }
-                
-                  
+                    {renderIconsPath[location.pathname]} 
         </ul>
     </div>
   )
 }
+
+
+const renderIconsPath = {
+  '/projects' :
+            <li className='navbar-left-icon-list-li'>
+                <Link to='/about'><img src={FoxIcon} className='navbar-left-icon-link' alt='about'/></Link>
+            </li>    
+  ,
+  '/about' : 
+            <li className='navbar-left-icon-list-li'>
+                <Link to='/projects'><img src={ProjectsIcon} className='navbar-left-icon-link' alt='about'/></Link>
+            </li> 
+  ,
+  '/curriculum' :
+      <>
+            <li className='navbar-left-icon-list-li'>
+                <Link to='/projects'><img src={ProjectsIcon} className='navbar-left-icon-link' alt='about'/></Link>
+            </li> 
+            <li className='navbar-left-icon-list-li'>
+                <Link to='/about'><img src={FoxIcon} className='navbar-left-icon-link' alt='about'/></Link>
+            </li> 
+      </>
+} 

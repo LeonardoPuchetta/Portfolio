@@ -2,6 +2,9 @@
 
 .loading{
     background-color:$background-secundary;
+    background-image: url('./../assets/img/space_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 
     min-height: 100vh;
     min-width: 100vw;
@@ -15,23 +18,37 @@
 .loader {
     width: 3rem;
     height: 3rem;
-    animation: loader 2.3s ease ;
+    border-style: solid;
+    border-color: whitesmoke;
+    border-radius: 50%;
+    padding: 1rem;
+    animation:  rotate 1.25s 2, scale 1s 1 2.5s;
+
 }
 
-@keyframes loader {
+@keyframes scale {
     0% {
-        height: 12px;
+        width: 3rem;
+        padding: 0.8rem;
+        border-color: transparent;
     }
-    25% {
-        height: 50px;
-    }
+ 
     50% {
-        height: 10px;
+        width:1.5rem;
+        padding: 0.5rem;
+        border-color: transparent;
+        opacity: 0.5;
+
     }
-    75% {
-        height: 25px;
-    }
+
     100% {
-        height: 12px;
+        width:0rem;
+        padding: 0rem;
+        border-color: transparent;
+        opacity: 0.1;
     }
 }
+
+// rotacion
+@keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}

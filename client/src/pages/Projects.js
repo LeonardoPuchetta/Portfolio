@@ -6,18 +6,18 @@ import { getProyectsApi } from '../api/projects';
 
 
 //page
-export default function Projects(props) {
+export default function Projects() {
 
   const [projectList,setProjectList] = useState([]);
 
   useEffect(() => {
    getProyectsApi().then(response => {
       setProjectList(response.projects);
+      
     });
-    
   }, [])
-  
+
   return (
-    <ProjectsItemsListContainer projects={projects}/>
+    <ProjectsItemsListContainer projects={projectList}/>
   )
 }

@@ -8,6 +8,7 @@ import {
 import routes from './config/routes' ;
 
 import Loading from "./components/Loading";
+import LoadingProvider from "./providers/LoadingProvider";
 
 
 import AOS from 'aos';
@@ -30,27 +31,28 @@ function App() {
     AOS.init({
       duration : 2000
     });
-
     setTimeout(()=>{
       setLoading(false)
-    },2500)
+    },3250)
 
     },[]);
 
   if (loading) return (<Loading/>) 
   else return (
-    <Router>
-          <Routes>
-            {routes.map((route,index) => (
-                  <Route  key={index} 
-                          path={route.path}
-                          element={ <route.layout>
-                                    <route.component/>
-                                    </route.layout>}
-                            />
-            ))}
-          </Routes>
-    </Router>
+        // <LoadingProvider>
+              <Router>
+                    <Routes>
+                      {routes.map((route,index) => (
+                            <Route  key={index} 
+                                    path={route.path}
+                                    element={ <route.layout>
+                                              <route.component/>
+                                              </route.layout>}
+                                      />
+                      ))}
+                    </Routes>
+              </Router>
+          // </LoadingProvider>
   );
 }
 

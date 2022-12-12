@@ -59,14 +59,7 @@ export default function AstroAnimatedIcon(props) {
     
        }
     
-    //    const changeVisibilityDelays = {
-    //     "astro-big": (icon) => setTimeout(() => {icon.style.display="block";icon.style.opacity='0'}, 500),
-    //     "astro-medium": (icon) => setTimeout(() => {;icon.style.display="block";icon.style.opacity='0'},700),
-    //     "astro-small": (icon) => setTimeout(() => {icon.style.display="block";icon.style.opacity='0'}, 1200),
-    //    }
-    
 
-    
       return (
         <div id={astroId}>
             <img src={astroImage} alt=''/>
