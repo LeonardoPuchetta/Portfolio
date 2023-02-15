@@ -2,7 +2,7 @@
 
 .loading{
     background-color:$background-secundary;
-    background-image: url('./../assets/img/space_1.jpg');
+    background-image: url('./../assets/img/cool-background.png');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -10,7 +10,6 @@
     min-width: 100vw;
     display: flex;
     align-items: center;
-    
     justify-content: center;
     
 }
@@ -23,6 +22,7 @@
     border-radius: 50%;
     padding: 1rem;
     animation:  rotate 1.25s 2, scale 1s 1 2.5s;
+    opacity:0.8 ;
 
 }
 
