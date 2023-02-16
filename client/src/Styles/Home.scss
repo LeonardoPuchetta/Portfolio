@@ -11,7 +11,6 @@
 #title{
     margin:0;
     font-family:monospace;
-    // font-size:1.8rem;
     background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #FFD700);
     color: transparent; 
     background-clip: text;
@@ -21,11 +20,12 @@
 .icons{
     display: flex;
     flex-direction: row;
+    
 }
 
 .icon-image-container{
     position: relative;
-    cursor: pointer;
+    cursor:default; 
 }
 .span-tooltip{
     position: absolute;
