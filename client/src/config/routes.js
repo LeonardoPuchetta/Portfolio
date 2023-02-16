@@ -7,8 +7,6 @@ import Projects from "../pages/Projects";
 import Curriculum from "../pages/Curriculum";
 import Error404 from "../pages/Error404";
 
-
-
 const routes =[
     {
         path: "/",

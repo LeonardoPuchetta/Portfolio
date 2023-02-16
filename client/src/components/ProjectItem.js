@@ -32,7 +32,7 @@ export default function ProjectItem(props) {
             <div className='project-item-skills'>
                 <ul className='skills-ul'>
                 {skills.map((skill,index)=>{
-                    return (<li className='skill-li'>{skill}</li>)
+                    return (<li className='skill-li' key={index}>{skill}</li>)
                 })}
                 </ul>
             </div>

@@ -1,4 +1,4 @@
-import React, { useEffect ,useState} from 'react';
+import React, { useEffect} from 'react';
 import './../Styles/AstroAnimatedIcon.scss';
 
 import astroImage from './../assets/icons/astronaut.svg'
@@ -8,9 +8,6 @@ export default function AstroAnimatedIcon(props) {
 
     const {astroId} = props;
     
-
-    // const [newAstro,setNewAstro] = useState(false);
-
     const astroClassSizeArray = ['astro-big','astro-medium','astro-small'];
     const originsArray = [10,30,50,70,90];
 

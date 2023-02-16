@@ -28,7 +28,7 @@ useEffect(() => {
 }, [])
 
 
- const {rocketClassSize,rocketClassOrigin} = props;
+//  const {rocketClassSize,rocketClassOrigin} = props;
 
  const objectOriginSizeClassRocket = {
     "rocket-big" : {
@@ -60,8 +60,6 @@ useEffect(() => {
     "rocket-medium": (icon) => setTimeout(() => {;icon.style.display="block";icon.style.opacity='0'},1200),
     "rocket-small": (icon) => setTimeout(() => {icon.style.display="block";icon.style.opacity='0'}, 1400),
    }
-
- //para animar necesito clases de tamaño y de origen 
 
   return (
     <div id={rocketId}>

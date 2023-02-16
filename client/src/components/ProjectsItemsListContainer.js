@@ -12,7 +12,7 @@ export default function ProjectsItemsListContainer(props) {
     <div className='projects-items-list-container'>
       {projects.map((project,index) =>{
         const order = index ; 
-        return (<ProjectItem key={index} project={project}  order={order}/>)
+        return (<ProjectItem key={index} project={project} order={order}/>)
       })}
     </div>
    

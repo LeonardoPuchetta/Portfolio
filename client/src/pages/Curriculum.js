@@ -1,5 +1,4 @@
 import React,{useState,useEffect} from 'react';
-
 import './../Styles/Curriculum.scss';
 import { getFileApi } from '../api/fileProject';
 import readFile from '../utils/readFile';

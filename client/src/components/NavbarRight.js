@@ -1,12 +1,9 @@
-import React , {useEffect}from 'react';
+import React from 'react';
 import './../Styles/NavbarRight.scss';
-
 import { Link } from 'react-router-dom';
-
 import LinkedinIcon from './../assets/icons/linkedin.svg';
 import GithubIcon from './../assets/icons/github.svg';
 import CvIcon from './../assets/icons/cv.svg';
-
 
 export default function NavbarRight() {
     
@@ -25,9 +22,8 @@ export default function NavbarRight() {
                             </a>
                         </li>
                         <li className='navbar-right-icon-list-li'>
-                        <Link to='/curriculum'><img src={CvIcon} className='navbar-right-icon-link' alt='curriculum'/></Link>
+                            <Link to='/curriculum'><img src={CvIcon} className='navbar-right-icon-link' alt='curriculum'/></Link>
                         </li>
-                        {/* */}
                 </ul>
         </div>
       )

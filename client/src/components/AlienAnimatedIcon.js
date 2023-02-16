@@ -1,4 +1,4 @@
-import React, { useEffect,useState } from 'react';
+import React, { useEffect} from 'react';
 
 import alienImage from './../assets/icons/alien.svg';
 import './../Styles/AlienAnimatedIcon.scss';
@@ -11,25 +11,8 @@ export default function AlienAnimatedIcon(props) {
     const alienClassSizeArray = ['alien-big','alien-medium','alien-small'];
     const originsArray = [10,30,50,70,90];
 
-    // const [bigRefresh,setBigRefresh] = useState(false);
-    // const [mediumRefresh,setMediumRefresh] = useState(false);
-    // const [smallRefresh,setSmallRefresh] = useState(false);
-
-
-
     useEffect(() => {
-    //   //sorteo de clases 
-    //   const random_size= alienClassSizeArray[Math.floor(Math.random()*alienClassSizeArray.length)];
-    //   const random_origin = originsArray[Math.floor( Math.random()*originsArray.length)];
-    
-    //   //asignacion de clases 
-    //   let x = document.getElementById(alienId);
-    //   x.removeAttribute('class')
-    
-    //   objectOriginSizeClassAlien[random_size][random_origin](x);
-    
-    //   //hacemos el objeto visible
-    //   changeVisibilityDelays[random_size](x);
+
     sortedClass();
     
     }, []);
@@ -51,14 +34,6 @@ export default function AlienAnimatedIcon(props) {
 
 
      };
-
-     //objeto para sortear clases con delay para cada tamaño de icono
-    //  const objectSortedNextClass = {
-    //     "alien-big": () => {setTimeout(() =>{sortedClass()},12000)},
-    //     "alien-medium":() => {setTimeout(() =>{sortedClass()},12500)},
-    //     "alien-small":() => {setTimeout(() =>{sortedClass()},13000)}
-    //  }
-    
 
      const objectOriginSizeClassAlien = {
         "alien-big" : {
@@ -90,12 +65,7 @@ export default function AlienAnimatedIcon(props) {
         "alien-medium": (icon) => setTimeout(() => {;icon.style.display="block";icon.style.opacity='0'},700),
         "alien-small": (icon) => setTimeout(() => {icon.style.display="block";icon.style.opacity='0'}, 1200),
        }
-
-
-
       
-     //para animar necesito clases de tamaño y de origen 
-    
       return (
         <div id={alienId}>
             <img src={alienImage} alt=''/>

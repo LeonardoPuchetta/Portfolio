@@ -1,0 +1,31 @@
+.error404-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./../assets/img/space_1.jpg');
+    font-family: 'Roboto', sans-serif;
+    padding: 2rem;
+    border-radius: 50%;
+    margin: 2rem;
+  }
+  
+.error-h1 {
+    font-size: 3rem;
+    color: #eee5e5;
+    margin: 0;
+  }
+  
+ .error-p{
+    font-size: 1.5rem;
+    color: #f0e7e7;
+    margin: 0;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  
+  
+  
+  
