@@ -13,8 +13,6 @@
   "license": "ISC",
   "dependencies": {
     "moongose": "^1.0.0"
-  },
-  "engines": {
-    "node": ">=14 <15"
   }
+
 }
