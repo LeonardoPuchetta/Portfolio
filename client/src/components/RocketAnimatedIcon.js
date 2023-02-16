@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-
 import rocketImage from './../assets/icons/rocket.svg';
 import './../Styles/RocketAnimatedIcon.scss';
 
