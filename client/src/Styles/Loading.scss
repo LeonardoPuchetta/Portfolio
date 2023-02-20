@@ -14,7 +14,7 @@
     
 }
 
-.loader {
+.loading-image {
     width: 3rem;
     height: 3rem;
     border-style: solid;
@@ -25,6 +25,15 @@
     // , scale 1s 1 2.5s;
     opacity:0.8 ;
 
+}
+
+.loading-text{
+    font-size: 2rem;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
 }
 
 @keyframes scale {
