@@ -10,7 +10,7 @@ export default function Loading() {
             <img src={FoxColorIcon} alt='loadImage'/>
          </div>
         <div className='loading-text'>
-              Un poco de paciencia por favor ...
+              Un poco de paciencia por favor . . .
         </div>
     </div>
   )

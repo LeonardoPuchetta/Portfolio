@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: center;
     position:relative;
+    flex-direction: column;
     
 }
 
@@ -28,12 +29,13 @@
 }
 
 .loading-text{
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: aliceblue;
     display: flex;
     align-items: center;
     justify-content: center;
     position:relative;
+    margin-top: 2rem;
 }
 
 @keyframes scale {
