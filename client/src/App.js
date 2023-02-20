@@ -30,7 +30,8 @@ function App() {
           });
           setTimeout(()=>{
             setLoading(false)
-          },3250)
+          },3250);
+
 
     },[]);
 

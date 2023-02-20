@@ -5,8 +5,9 @@ import ExternalIcon from './../assets/icons/external-link.svg';
 import { getImageApi } from '../api/fileProject';
 import readFile from '../utils/readFile';
 
-export default function ProjectItem(props) {
 
+
+export default function ProjectItem(props) {
 
     const {project,order} = props;
     const {title,description,skills,image,link,github} = project;
@@ -24,8 +25,9 @@ export default function ProjectItem(props) {
             })
     }, [order,image])
 
+// 
   return (
-    <div className='project-item-container' data-aos="flip-right" >
+    <div className='project-item-container' data-aos="flip-right">
         <div className='project-item-info'>
             <div className='project-item-title'>{title}</div>
             <div className='project-item-description'><p>{description}</p></div>
