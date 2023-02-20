@@ -13,7 +13,6 @@ export default function About() {
 
 
   useEffect(() => {
-
     getImageApi(image).then(response =>{
         readFile(response,setDataUrlImage )
     }).catch(error =>{
@@ -23,26 +22,26 @@ export default function About() {
    
   }, [])
   
-
-
-
-
   return (
     <div className='about-container' data-aos="fade-up" data-aos-duration="3000">
+        <div className='about-image'>
+          <img src={dataUrlImage} alt='img'/>
+        </div>
+        <div className='about-description'>
+            <h1 className='about-description-title'>Sobre mi</h1>
+            <p className='about-description-content'>
+                Hola , gracias por visitar mi portfolio ! Mi nombre es Leonardo Puchetta y soy un estudiante de ingeniería eléctrica y profesorado en electrónica apasionado por la programación y la tecnología.
+            </p>
+            <p className='about-description-content'>
+            Durante mi formación en ingeniería eléctrica, he adquirido habilidades sólidas en matemáticas, física , electrónica, fundamentos de programacion orientada a objetos y resolucion de problemas lógicos. 
+            También he desarrollado habilidades importantes como la capacidad de resolver problemas complejos, trabajar en equipo y comunicarme de manera efectiva. 
+            </p>
+            <p className='about-description-content'>
+              En la actualidad estoy enfocado en el aprendizaje de React y NodeJS y siempre abierto a aprender nuevas tecnologías y ampliar mis conocimientos.
+              
+            </p>
 
-      <div className='about-image'>
-        <img src={dataUrlImage}/>
-        
-      </div>
-
-      <div className='about-description'>
-          <h1 className='about-description-title'>Sobre mi</h1>
-          <p className='about-description-content'>
-           Estudiante de Profesorado de Informática en INET en busqueda de mi primer experiencia laboral en el mundo
-            del desarrollo
-          </p>
-      </div>
-   
+        </div>
     </div>
   )
 }
