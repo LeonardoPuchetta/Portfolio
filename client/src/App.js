@@ -8,13 +8,12 @@ import {
 import routes from './config/routes' ;
 import Loading from "./components/Loading";
 
-
 import AOS from 'aos';
 import "aos/dist/aos.css";
 
 function App() {
 
-  const [loading,setLoading]=useState(true);
+  const [isLoading,setIsLoading]=useState(true);
 
   useEffect(()=>{
 
@@ -29,13 +28,13 @@ function App() {
             duration : 2000
           });
           setTimeout(()=>{
-            setLoading(false)
+            setIsLoading(false)
           },3250);
 
 
     },[]);
 
-  if (loading) return (<Loading/>) 
+  if (isLoading) return (<Loading/>) 
   else return (
               <Router>
                     <Routes>

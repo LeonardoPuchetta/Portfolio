@@ -5,12 +5,13 @@ import readFile from '../utils/readFile';
 
 export default function Curriculum() {
 
-  const name = 'leonardopuchettaCV.pdf'
+  //nombre del cv en el servidor 
+  const cv = 'leonardopuchettaCV.pdf'
 
   const [dataUrlFile,setDataUrlFile] = useState(null);
 
       useEffect(() => {
-          getFileApi(name).then(response =>{
+          getFileApi(cv).then(response =>{
               readFile(response,setDataUrlFile);              
           }).catch(error => {
             console.log(error)

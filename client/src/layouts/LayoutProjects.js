@@ -11,9 +11,9 @@ export default function LayoutProjects(props) {
     <>
     
     <div className='container-projects'>
-    <NavbarLeft/>
-        {children}
-    <NavbarRight/>
+      <NavbarLeft/>
+          {children }
+      <NavbarRight/>
     </div>
     </>
   )
