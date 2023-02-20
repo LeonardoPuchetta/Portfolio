@@ -12,7 +12,7 @@ export default function LayoutProjects(props) {
     
     <div className='container-projects'>
       <NavbarLeft/>
-          {children }
+          {children}
       <NavbarRight/>
     </div>
     </>
