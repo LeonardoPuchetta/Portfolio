@@ -23,7 +23,6 @@
     border-radius: 50%;
     padding: 1rem;
     animation:  rotate 1.25s infinite;
-    // , scale 1s 1 2.5s;
     opacity:0.8 ;
 
 }
@@ -36,6 +35,7 @@
     justify-content: center;
     position:relative;
     margin-top: 2rem;
+    font-weight: bolder;
 }
 
 @keyframes scale {

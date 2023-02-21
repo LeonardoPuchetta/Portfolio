@@ -36,7 +36,7 @@ export default function About() {
         <div className='about-description'>
             <h1 className='about-description-title'>Sobre mi</h1>
             <p className='about-description-content'>
-                Hola , gracias por visitar mi portfolio ! Mi nombre es Leonardo Puchetta y soy un estudiante de ingeniería eléctrica y profesorado en electrónica apasionado por la programación y la tecnología.
+                Hola , gracias por visitar mi portfolio ! Mi nombre es Leonardo Puchetta soy un estudiante de ingeniería eléctrica y profesorado en electrónica apasionado por la programación y la tecnología.
             </p>
             <p className='about-description-content'>
             Durante mi formación en ingeniería eléctrica he adquirido habilidades sólidas en matemáticas, física , electrónica, fundamentos de programacion orientada a objetos y resolucion de problemas lógicos. 
